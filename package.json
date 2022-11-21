@@ -3,6 +3,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview --port 4137",
