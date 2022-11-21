@@ -3,14 +3,13 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "vite preview --host",
+    "start": "vite preview",
     "dev": "vite",
     "build": "vite build",
     "lint:script": "eslint \"{src/**/*.{ts,vue}}\"",
     "lint:tsc": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "concurrently \"yarn lint:tsc\" \"yarn lint:script\"",
-    "test": "yarn test:unit:ci && yarn test:e2e:ci",
-    "generate:api": "sta -p https://raw.githubusercontent.com/gothinkster/realworld/main/api/openapi.yml -o ./src/services -n api.ts"
+    "test": "yarn test:unit:ci && yarn test:e2e:ci"
   },
   "dependencies": {
     "insane": "^2.6.2",
