@@ -3,7 +3,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "vite preview",
+    "start": "vite preview --port $PORT",
     "dev": "vite",
     "build": "vite build",
     "lint:script": "eslint \"{src/**/*.{ts,vue}}\"",
